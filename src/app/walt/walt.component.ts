@@ -15,7 +15,9 @@ export class WaltComponent implements OnInit {
   }
 
   checkUsername() {
-    return !this.userName;
+    return this.userName === ''
+
+    // return !this.userName;
 
     // if (this.userName == '') {
     //   return true;
