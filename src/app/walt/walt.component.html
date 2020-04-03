@@ -1,2 +1,15 @@
-<p class="alert-warning">WARNING!</p>
-<p class="alert-success">SUCCESS!</p>
+<div class="row">
+    <div class="col-sm-2">Username:</div>
+    <div class="col-sm-3">
+        <input type="text" [(ngModel)]="userName" />
+    </div>
+    <div class="col-sm-3">
+        <button class="btn btn-primary" [disabled]="checkUsername()" (click)="resetUsername()">Click Me Bitch!</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-2">Username:</div>
+    <div class="col-sm-4">
+        {{ userName }}
+    </div>
+</div>
