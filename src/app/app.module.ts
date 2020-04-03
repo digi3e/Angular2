@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { WaltComponent } from './walt/walt.component';
+import { LabComponent } from './lab/lab.component';
 
 @NgModule({
   declarations: [
       AppComponent,
       ServerComponent,
       ServersComponent,
-      WaltComponent
+      WaltComponent,
+      LabComponent
   ],
   imports: [
       BrowserModule,

@@ -1,0 +1,11 @@
+<button class="btn btn-info" (click)="updateDisplay()">Display Details</button> Clicks: {{ clickTracker }}
+
+<div style="height: 25px;">
+    <p *ngIf="showP">Secret password</p>
+</div>
+
+<div *ngFor="let clicker of clickArray; index as i">
+    <div *ngIf="i < 5">{{ clicker }}</div>
+    <div *ngIf="i >= 5" [ngStyle]="{backgroundColor: 'blue'}" [ngClass]="'pastFive'">{{ clicker }}</div>
+</div>
+
