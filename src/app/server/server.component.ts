@@ -5,5 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './server.component.html'
 })
 export class ServerComponent {
-  
+  serverId: number = Math.floor(Math.random() * 10);
+  serverStatus: string = 'offline';
+
+  walt() {
+    return this.serverId
+  }
 }
+
+
